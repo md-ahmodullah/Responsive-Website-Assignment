@@ -1,13 +1,160 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
 
-/* 
-font-family: "Inter", sans-serif;
-font-family: "Dancing Script", cursive;
-*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Dark theme */
 body{
     background-color: black;
     font-family: "Inter", sans-serif;
+}
+
+/* shared style */
+.section-area{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.bg-primary{
+    background: rgb(230, 83, 60);
+}
+.bg-secondary{
+    background: rgb(34, 34, 34);
+}
+.logo{
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-align: left;
+    font-style: italic;
+}
+.section-title{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.section-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn{
+    border-radius: 42px;
+    padding: 12px 30px;
+    color: rgb(255, 255, 255);
+    background: rgb(230, 83, 60);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.white{
+    color: white;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+
+/* navbar styles */
+.navbar{
+    margin-top: 57px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    gap: 40px;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+#active{
+    border-radius: 40px;
+    background: rgb(230, 83, 60);
+    padding: 7px 15px;
+}
+
+/* banner styles */
+.banner{
+    margin-top: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    max-width: 520px;
+    flex-direction: column;
+    gap: 25px;
+}
+#banner-title{
+    font-size: 4.7rem;
+}
+#shape{
+    font-family: "Dancing Script", cursive;
+    font-size: 7rem;
+}
+.buttons{
+    gap: 10px;
+}
+#btn-bg-black{
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+.image{
+    width: 350px;
+    height: 580px;
+    background-image: url(../images/Images\ 2.png);
+    position: relative;
+}
+.video350, .video500{
+    max-width: 206px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px 20px;
+    position: absolute;
+}
+
+.video350{
+    gap: 15px;
+    align-items: center;
+    background: rgba(35, 33, 33, 0.53);
+    bottom: 80px;
+    left: -110px;
+}
+.red-circle{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(230, 83, 60);
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+}
+.video350 h2{
+    font-size: 1.5rem;
+}
+.video350 p{
+    font-size: 1rem;
+}
+.video500{
+    background: rgba(225, 218, 218, 0.19);
+    top: 140px;
+    right: -50px;
+}
+.video500 h2{
+    font-size: 2.2rem;
+}
+.video500 p{
+    font-size: 0.8rem;
 }
