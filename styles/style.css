@@ -17,6 +17,7 @@ body{
 .section-area{
     max-width: 1060px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 .bg-primary{
     background: rgb(230, 83, 60);
@@ -33,13 +34,15 @@ body{
 }
 .section-title{
     color: rgb(255, 255, 255);
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 900;
+    margin-bottom: 14px;
 }
 .section-description{
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
+    margin-bottom: 14px;
 }
 .btn{
     border-radius: 42px;
@@ -168,10 +171,29 @@ body{
     font-size: 0.8rem;
 }
 
-/* nav & banner responsive style */
+/* Change Your Habits section style */
+.circle-posts{
+    margin-top: 45px;
+    gap: 20px;
+}
+.circle-post{
+    flex-direction: column;
+    align-items: center;
+}
+.circle-post img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.circle-post h4{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* responsive style */
 @media screen and (max-width: 576px) {
     .section-area{
-        max-width: 390px;
+        max-width: 350px;
         margin: 0 auto;
         margin-top: 30px;
     }
@@ -207,4 +229,36 @@ body{
         right: -5px;
         padding: 10px 15px;
     }
+
+    .circle-posts{
+        flex-direction: column;
+    }
+
+    .run-mile-content{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* run an extra mile section style */
+.run-mile-container{
+    border-radius: 10px;
+}
+.run-mile-content{
+    align-items: center;
+    padding: 30px;
+    border: 2px solid red;
+    gap: 180px;
+}
+.run-content{
+    /* max-width: 300px; */
+    flex-direction: column;
+    gap: 10px;
+}
+.run-image{
+    min-width: 300px;
+}
+.run-image img{
+    border-radius: 10px;
+    width: 100%;
 }
