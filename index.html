@@ -115,19 +115,19 @@
 
          <!-- BMI calculator section starts -->
           <section class="bmi-section-heading">
-            <div>
+            <div class="section-area">
                 <h2 class="section-title">BMI Calculator</h2>
                 <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             </div>
           </section>
           <section class="bg-secondary">
             <div class="table-area section-area flex">
-                <div class="bmi-chart white">
+                <div class="bmi-chart white flex">
                     <h2>BMI Calculator Chart</h2>
                     <table>
                         <thead>
                             <th class="left">BMI</th>
-                            <th class="left">Weight Status</th>
+                            <th class="left">Status</th>
                         </thead>
                         <tbody class="section-description">
                             <tr>
@@ -149,7 +149,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="calculate-bmi white">
+                <div class="calculate-bmi white flex">
                     <h2>Calculate your BMI</h2>
                     <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
                     <form action="">
@@ -157,14 +157,17 @@
                             <input type="text" placeholder="Height/cm" class="input">
                             <input type="text" placeholder="Weight/kg" class="input">
                             <input type="text" placeholder="Age" class="input">
-                            <select name="" id="" class="input section-description">
+                            <select name="" id="" class="input select">
                                 <option value="">Sex</option>
                             </select>
-                            <select name="" id="" class="col-span input section-description">
+                            <select name="" id="" class="col-span input select">
                                 <option value="">Select an activity factor</option>
                             </select>
                         </div>
                     </form>
+                    <div>
+                        <button class="btn">Calculate</button>
+                    </div>
                 </div>
             </div>
           </section>

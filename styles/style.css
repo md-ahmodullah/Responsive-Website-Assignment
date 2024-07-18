@@ -17,7 +17,7 @@ body{
 .section-area{
     max-width: 1060px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .bg-primary{
     background: rgb(230, 83, 60);
@@ -214,21 +214,34 @@ body{
 
 /* BMI calculator section style */
 .bmi-section-heading{
-    margin: 80px auto;
+    margin: 80px 0px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.bmi-chart{
+    flex-direction: column;
+    gap: 35px;
+}
+.calculate-bmi{
+    flex-direction: column;
+    gap: 10px;
+}
 .table-area{
     justify-content: space-between;
     gap: 200px;
+    padding: 50px 0px;
 }
 table{
     border-collapse: collapse;
 }
+th{
+    font-size: 1rem;
+    font-weight: 400;
+}
 th, td{
     border: 1px solid rgba(211, 211, 211, 0.1);
-    padding: 10px 15px;
+    padding: 12px 20px;
 }
 .input-form{
     grid-template-columns: repeat(2, 1fr);
@@ -238,14 +251,29 @@ th, td{
     grid-column: span 2;
 }
 .input{
-    height: 15px;
     border: 1px solid rgba(0, 0, 0, 0.068);
     border-radius: 10px;
     background: rgba(238, 234, 234, 0.064);
-    padding: 18px 25px;
+    padding: 20px 25px;
+    max-height: 60px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+.select{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
 }
 input::placeholder{
     color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+input:focus{
+    color: rgba(255, 255, 255, 0.804);
+    font-size: 1rem;
+}
+form{
+    margin-bottom: 20px;
 }
 
 /* responsive style */
@@ -299,5 +327,13 @@ input::placeholder{
     .run-content,
     .run-image{
         width: 80%;
+    }
+
+    .table-area{
+        flex-direction: column;
+        gap: 30px
+    }
+    .input{
+        width: 100%;
     }
 }
