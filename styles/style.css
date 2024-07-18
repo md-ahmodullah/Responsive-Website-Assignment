@@ -88,6 +88,16 @@ body{
     padding: 7px 15px;
 }
 
+.hamburger-icon{
+    display: none;
+}
+.hamburger-icon div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
 /* banner styles */
 .banner{
     margin-top: 32px;
@@ -95,7 +105,7 @@ body{
     align-items: center;
 }
 .content{
-    max-width: 520px;
+    max-width: 500px;
     flex-direction: column;
     gap: 25px;
 }
@@ -126,7 +136,6 @@ body{
     padding: 15px 20px;
     position: absolute;
 }
-
 .video350{
     gap: 15px;
     align-items: center;
@@ -157,4 +166,45 @@ body{
 }
 .video500 p{
     font-size: 0.8rem;
+}
+
+/* nav & banner responsive style */
+@media screen and (max-width: 576px) {
+    .section-area{
+        max-width: 390px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .hamburger-icon{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+        margin-top: 32px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #banner-title{
+        font-size: 3rem;
+    }
+    #shape{
+        font-size: 4.2rem;
+    }
+    .btn{
+        font-size: 0.9rem;
+    }
+    .video350{
+        bottom: 260px;
+        left: -15px;
+        padding: 10px 15px;
+    }
+    .video500{
+        top: 40px;
+        right: -5px;
+        padding: 10px 15px;
+    }
 }
