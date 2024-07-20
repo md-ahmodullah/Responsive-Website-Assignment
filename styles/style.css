@@ -391,6 +391,17 @@ form{
     }
     .trainer{
         grid-template-columns: repeat(1, 1fr);
+        grid-column: auto;
     }
-
+    .small-off{
+        display: none;
+    }
+    .trainer-image1,
+    .trainer-image2,
+    .trainer-image3,
+    .trainer-image4,
+    .trainer-image5,
+    .trainer-image6{
+        height: 280px;
+}
 }
