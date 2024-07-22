@@ -1,6 +1,10 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -45,6 +49,7 @@ body{
     margin-bottom: 14px;
 }
 .btn{
+    border: 1px solid rgba(230, 83, 60, 0.831);
     border-radius: 42px;
     padding: 12px 30px;
     color: rgb(255, 255, 255);
@@ -215,6 +220,153 @@ body{
     width: 100%;
 }
 
+/* Training and Exercise section style */
+.training-images{
+    min-height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+}
+#image1{
+    background-image: url(../images/exercise1.jpg);
+    background-color: rgba(75, 236, 182, 0.5);
+    background-blend-mode: overlay;
+    align-items: flex-end;
+}
+#image2{
+    background-image: url(../images/exercise2.png);
+    grid-column: span 2;
+    background-color: rgba(231, 56, 56, 0.5);
+    background-blend-mode: overlay;
+    align-items: flex-start;
+}
+#image3{
+    background-image: url(../images/exercise3.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    align-items: flex-end;
+}
+#image4{
+    background-image: url(../images/exercise4.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    grid-column: span 2;
+    align-items: flex-end;
+}
+#image5{
+    background-image: url(../images/exercise5.jpg);
+    background-color: rgba(41, 185, 80, 0.5);
+    background-blend-mode: overlay;
+    align-items: flex-end;
+}
+#image6{
+    background-image: url(../images/exercise6.jpg);
+    background-color: rgba(58, 40, 162, 0.447);
+    background-blend-mode: overlay;
+    align-items: flex-end;
+}
+#image1,
+#image2,
+#image3,
+#image4,
+#image5,
+#image6{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.training-image p{
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 30px;
+}
+/* Unique section styles */
+.achievements{
+    flex-direction: column;
+    gap: 40px;
+}
+.cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.card{
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(211, 211, 211, 0.274);
+    border-radius: 10px;
+    padding: 20px;
+}
+.card img{
+    width: 100%;
+}
+#reverse{
+    flex-direction: row-reverse;
+}
+.card-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card-btn{
+    border: 1px solid rgba(230, 83, 60, 0.831);
+    border-radius: 20px;
+    padding: 6px 12px;
+    color: rgb(255, 255, 255);
+    background: rgb(230, 83, 60);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.card img, .branch img{
+    height: 100px;
+    width: 150px;
+}
+
+.pagination{
+    margin: 40px 0px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+.number{
+    color: rgba(255, 255, 255, 0.511);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+#on-page{
+    color: rgba(255, 255, 255, 0.858);
+}
+.headquarters{
+    flex-direction: column;
+}
+.branches{
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px;
+    border-radius: 10px;
+}
+.branch{
+    flex-direction: column;
+    align-items: center;
+}
+.find{
+    background-image: url(../images/exercise2.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    background-color: rgba(13, 21, 179, 0.582);
+    background-blend-mode: overlay;
+    padding: 50px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+}
+#bg-dark{
+    background: rgba(2, 2, 2, 0.811);
+}
+
+
 /* BMI calculator section style */
 .bmi-section-heading{
     margin: 80px 0px auto;
@@ -319,16 +471,8 @@ form{
     align-items: baseline;
     padding: 10px;
 }
-/* .trainer img{
-    width: 100%;
-    height: 350px;
-    border-radius: 10px;
-} */
-/* .trainer{
-    background-image: url(../images/trainer1.png), url(../images/trainer2.png), url(../images/trainer3.png), url(../images/trainer4.png), url(../images/trainer5.png), url(../images/trainer6.png)
-} */
 
-
+/* Footer section style */
 .footer-content{
     justify-content: space-between;
     padding-top: 70px;
@@ -405,6 +549,30 @@ form{
     .run-content,
     .run-image{
         width: 80%;
+    }
+
+    .training-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* .training-image{
+        height: 200px;
+    } */
+    #image2, #image4{
+        grid-column: auto;
+    }
+
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card{
+        gap: 20px;
+    }
+    .branches{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .find input{
+        width: 90%;
     }
 
     .table-area{
