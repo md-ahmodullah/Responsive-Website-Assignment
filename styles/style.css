@@ -298,9 +298,6 @@ body{
 .card img{
     width: 100%;
 }
-#reverse{
-    flex-direction: row-reverse;
-}
 .card-title{
     color: rgb(255, 255, 255);
     font-size: 1.4rem;
@@ -308,11 +305,11 @@ body{
     margin-bottom: 10px;
 }
 .card-btn{
-    border: 1px solid rgba(230, 83, 60, 0.831);
+    border: 2px solid rgba(255, 255, 255, 0.537);
     border-radius: 20px;
     padding: 6px 12px;
-    color: rgb(255, 255, 255);
-    background: rgb(230, 83, 60);
+    color: rgba(255, 255, 255, 0.71);
+    background: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 500;
@@ -323,7 +320,6 @@ body{
 }
 
 .pagination{
-    margin: 40px 0px;
     justify-content: flex-end;
     align-items: center;
     gap: 30px;
@@ -336,13 +332,13 @@ body{
 #on-page{
     color: rgba(255, 255, 255, 0.858);
 }
-.headquarters{
+.popular-branches{
     flex-direction: column;
+    gap: 20px;
 }
 .branches{
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 0px;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px 0px;
     border-radius: 10px;
 }
 .branch{
@@ -364,6 +360,7 @@ body{
 }
 #bg-dark{
     background: rgba(2, 2, 2, 0.811);
+    font-size: 1.6rem;
 }
 
 
@@ -640,8 +637,12 @@ form{
         gap: 20px;
     }
     .branches{
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+    .find{
+        padding: 25px 15px;
+        gap: 15px;
     }
     .find input{
         width: 90%;
