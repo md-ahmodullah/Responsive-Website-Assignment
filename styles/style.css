@@ -1,9 +1,6 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
 
-html{
-    scroll-behavior: smooth;
-}
 
 *{
     margin: 0;
@@ -206,18 +203,14 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 30px 0px;
+    gap: 30px;
 }
 .run-content{
-    width: 40%;
     flex-direction: column;
     gap: 10px;
 }
-.run-image{
-    width: 40%;
-}
 .run-image img{
     border-radius: 10px;
-    width: 100%;
 }
 
 /* Training and Exercise section style */
@@ -227,14 +220,14 @@ body{
 }
 #image1{
     background-image: url(../images/exercise1.jpg);
-    background-color: rgba(75, 236, 182, 0.5);
+    background-color: rgba(11, 127, 88, 0.521);
     background-blend-mode: overlay;
     align-items: flex-end;
 }
 #image2{
     background-image: url(../images/exercise2.png);
     grid-column: span 2;
-    background-color: rgba(231, 56, 56, 0.5);
+    background-color: rgba(188, 37, 37, 0.525);
     background-blend-mode: overlay;
     align-items: flex-start;
 }
@@ -253,13 +246,13 @@ body{
 }
 #image5{
     background-image: url(../images/exercise5.jpg);
-    background-color: rgba(41, 185, 80, 0.5);
+    background-color: rgba(14, 126, 44, 0.539);
     background-blend-mode: overlay;
     align-items: flex-end;
 }
 #image6{
     background-image: url(../images/exercise6.jpg);
-    background-color: rgba(58, 40, 162, 0.447);
+    background-color: rgba(27, 8, 133, 0.525);
     background-blend-mode: overlay;
     align-items: flex-end;
 }
@@ -278,6 +271,7 @@ body{
     font-weight: 500;
     font-size: 0.9rem;
     padding: 30px;
+    border-left: 2px solid rgba(0, 0, 0, 0.753);
 }
 /* Unique section styles */
 .achievements{
@@ -472,6 +466,72 @@ form{
     padding: 10px;
 }
 
+/* Review Rating section style */
+.review-ratings{
+    justify-content: space-between;
+    align-items: first baseline;
+    gap: 20px;
+}
+.reviews{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    border: 1px solid red;
+}
+.review-card{
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+}
+.name-pic{
+    align-items: center;
+    gap: 20px;
+}
+.name-pic img{
+    width: 40px;
+    height: 40px;
+}
+.ratings{
+    align-items: center;
+    gap: 20px;
+    width: 35%;
+    border: 1px solid blue;
+}
+.line{
+    flex-direction: column;
+    gap: 15px;
+}
+.line5{
+    width: 300px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgba(255, 217, 0, 0.566);
+}
+.line4{
+    width: 240px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgba(255, 217, 0, 0.566);
+}
+.line3{
+    width: 180px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgba(255, 217, 0, 0.566);
+}
+.line2{
+    width: 120px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgba(255, 217, 0, 0.566);
+}
+.line1{
+    width: 60px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgba(255, 217, 0, 0.566);
+}
+
 /* Footer section style */
 .footer-content{
     justify-content: space-between;
@@ -544,13 +604,12 @@ form{
 
     .run-mile-content{
         flex-direction: column;
-        gap: 30px;
+        gap: 50px;
+        padding: 20px;
     }
-    .run-content,
-    .run-image{
-        width: 80%;
+    .run-image img{
+        width: 100%;
     }
-
     .training-images{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -597,6 +656,14 @@ form{
     .trainer-image6{
         height: 280px;
     }
+
+    .review-ratings{
+        flex-direction: column;
+    }
+    .reviews{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .footer-content{
         flex-direction: column;
         gap: 25px;
