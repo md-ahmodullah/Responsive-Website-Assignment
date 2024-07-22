@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav class="navbar section-area flex">
+    <header class="section-area">
+        <nav class="navbar flex">
             <div>
                 <h2 class="logo">FitLife</h2>
             </div>
@@ -35,10 +35,10 @@
                 <div></div>
             </div>
         </nav>
-        <section class="banner section-area flex">
+        <section class="banner flex">
             <div class="content flex">
                 <h1 class="section-title" id="banner-title">Get body in <span id="shape">shape</span> & stay healthy</h1>
-                <p class="section-description">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                <p class="section-description">A huge selection of health and fitness content, healthy recipes <br>and transformation stories to help you get fit and stay fit!</p>
                 <div class="buttons flex">
                     <button class="btn">Join Club Now!</button>
                     <button class="btn" id="btn-bg-black">Download App</button>
@@ -63,8 +63,11 @@
     <main>
         <!-- Change Your Habits section starts -->
         <section class="change-your-habits-container section-area">
-            <h2 class="section-title center">Change Your Habits</h2>
-            <p class="section-description center">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            <div class="heading center">
+                <h2 class="section-title">Change Your Habits</h2>
+                <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
+            </div>
+            
             <div class="circle-posts flex">
                 <div class="circle-post flex">
                     <div>
@@ -115,8 +118,11 @@
 
          <!-- Training and Exercise section starts -->
           <section class="section-area">
-            <h2 class="section-title">Trainings and Exercises</h2>
-            <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym</p>
+            <div class="heading">
+                <h2 class="section-title">Trainings and Exercises</h2>
+                <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym</p>
+            </div>
+            
             <!-- .training-images*6>.image#image$>img[src="exercise$.jpg" alt="Doing Exercise Images"] -->
             <div class="training-images-row1 grid">
                 <div class="training-image flex" id="image1">
@@ -149,12 +155,11 @@
           </section>
 
           <!-- Unique Bonus Section Our Achievement -->
-           <section class="section-area achievements flex">
-            <div>
-                <h2 class="section-title center">Our Achievements</h2>
-                <p class="section-description center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus natus <br> quas quis nostrum recusandae</p>
+            <section class="section-area achievements flex">
+            <div class="center">
+                <h2 class="section-title">Our Achievements</h2>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus natus <br> quas quis nostrum recusandae</p>
             </div>
-            
             <div class="cards grid">
                 <div class="card flex">
                     <div>
@@ -212,13 +217,13 @@
             </div>
             
             <div class="center">
-                <button class="btn">Join Us Now</button>
+                <button class="btn">Take a Challenge</button>
             </div>
             <hr style="opacity: 30%;">
             <div class="popular-branches flex">
-                <div>
-                    <h2 class="section-title center">Popular Branches</h2>
-                    <p class="section-description center">Lorem ipsum dolor sit amet consectetur adipisicingelit. Perferendis, debitis.</p>
+                <div class="center">
+                    <h2 class="section-title">Popular Branches</h2>
+                    <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicingelit. Perferendis, debitis.</p>
                 </div>
                 
                 <div class="branches grid bg-secondary">
@@ -253,19 +258,21 @@
                 </div>
             </div>
             <div class="find center flex">
-                <h2 class="section-title">Find Your Nearest Branch</h2>
-                <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam nisi <br> harum? Magnam, ipsam consequatur!</p>
+                <div>
+                    <h2 class="section-title">Find Your Nearest Branch</h2>
+                    <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam nisi <br> harum? Magnam, ipsam consequatur!</p>
+                </div>
                 <input type="search" name="" id="bg-dark" placeholder="Enter Your Location..." class="input">
             </div>
            </section>
 
          <!-- BMI calculator section starts -->
-          <section class="bmi-section-heading">
-            <div class="section-area">
+          <div class="flex bmi-heading section-area" id="mb-65">
+            <div>
                 <h2 class="section-title">BMI Calculator</h2>
-                <p class="section-description">We believe fitness should be accessible to everyone<br>everywhere, regardless of income or access to a gym.everywhere, regardless of income or access to a gym.</p>
+                <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
             </div>
-          </section>
+          </div>
           <section class="bg-secondary">
             <div class="table-area section-area flex">
                 <div class="bmi-chart white flex">
@@ -319,9 +326,11 @@
           </section>
 
           <!-- Meet our team section starts -->
-          <section class="section-area center">
-            <h2 class="section-title">Meet Our Team</h2>
-            <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+          <section class="section-area">
+            <div class="heading center">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
+            </div>
             <div class="trainer bg-secondary grid">
                 <!-- <div>
                     <img src="images/trainer1.png" alt="Gym trainer picture">
@@ -369,27 +378,39 @@
           </section>
 
           <!-- Unique section 2: Review and Ratings section -->
-           <section class="section-area">
-            <h2 class="section-title center">Reviews & Ratings</h2>
-            <p class="section-description center">Lorem ipsum dolor sit amet consectetur adipisicing Mollitia accusantium saepe eveniet  <br> ratione error, quasi harum maiores cumque earum magni!</p>
+           <section class="section-area review-ratings-container flex">
+            <div>
+                <h2 class="section-title">Reviews & Ratings</h2>
+                <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet consectetur adipisicing Mollitia accusantium saepe eveniet  <br> ratione error, quasi harum maiores cumque earum magni!</p>
+                <hr style="opacity: 30%; margin-top: 15px;">
+            </div>
+            
 
             <div class="review-ratings flex">
-                <div class="ratings flex">
-                    <div class="stars">
-                        <p class="white">*****</p>
-                        <p class="white">****</p>
-                        <p class="white">***</p>
-                        <p class="white">**</p>
-                        <p class="white">*</p>
+                <div class="ratings-writeReview flex">
+                    <div class="ratings flex">
+                        <div class="stars">
+                            <p class="white">*****</p>
+                            <p class="white">****</p>
+                            <p class="white">***</p>
+                            <p class="white">**</p>
+                            <p class="white">*</p>
+                        </div>
+                        <div class="line flex">
+                            <div class="line5"></div>
+                            <div class="line4"></div>
+                            <div class="line3"></div>
+                            <div class="line2"></div>
+                            <div class="line1"></div>
+                        </div>
                     </div>
-                    <div class="line flex">
-                        <div class="line5"></div>
-                        <div class="line4"></div>
-                        <div class="line3"></div>
-                        <div class="line2"></div>
-                        <div class="line1"></div>
+                    <div class="write-review white">
+                        <div>
+                            <textarea name="" id="" cols="45" rows="15" placeholder="Write Your Review"></textarea>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="reviews grid">
                     <div class="review-card flex">
                         <div class="name-pic flex">
@@ -401,7 +422,7 @@
                             <p class="white">*****</p>
                         </div>
                         <div class="review-text">
-                            <p class="section-description">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Sint unde totam <br> nisi ad voluptates quisquam tempore <br>amet autem quae facere!</p>
+                            <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
                         </div>
                     </div>
                     <div class="review-card flex">
@@ -414,7 +435,7 @@
                             <p class="white">*****</p>
                         </div>
                         <div class="review-text">
-                            <p class="section-description">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Sint unde totam <br> nisi ad voluptates quisquam tempore <br>amet autem quae facere!</p>
+                            <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
                         </div>
                     </div>
                     <div class="review-card flex">
@@ -427,7 +448,7 @@
                             <p class="white">*****</p>
                         </div>
                         <div class="review-text">
-                            <p class="section-description">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Sint unde totam <br> nisi ad voluptates quisquam tempore <br>amet autem quae facere!</p>
+                            <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
                         </div>
                     </div>
                     <div class="review-card flex">
@@ -440,7 +461,7 @@
                             <p class="white">*****</p>
                         </div>
                         <div class="review-text">
-                            <p class="section-description">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Sint unde totam <br> nisi ad voluptates quisquam tempore <br>amet autem quae facere!</p>
+                            <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
                         </div>
                     </div>
                     <div class="review-card flex">
@@ -453,7 +474,7 @@
                             <p class="white">*****</p>
                         </div>
                         <div class="review-text">
-                            <p class="section-description">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Sint unde totam <br> nisi ad voluptates quisquam tempore <br>amet autem quae facere!</p>
+                            <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
                         </div>
                     </div>
                     <div class="review-card flex">
@@ -466,7 +487,7 @@
                             <p class="white">*****</p>
                         </div>
                         <div class="review-text">
-                            <p class="section-description">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Sint unde totam <br> nisi ad voluptates quisquam tempore <br>amet autem quae facere!</p>
+                            <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
                         </div>
                     </div>
                 </div>
@@ -474,30 +495,33 @@
            </section>
     </main>
     <footer class="bg-secondary">
-        <div class="section-area flex footer-content">
-            <div class="brand flex">
-                <h2 class="logo" id="brand-font">FitLife</h2>
-                <p class="section-description">We believe fitness should be accessible to everyone,<br>everywhere, regardless of income or access to a gym. With<br>hundreds of professional workouts</p>
+        <section  class="section-area" id="mb-zero">
+            <div class="flex footer-content">
+                <div class="brand flex">
+                    <h2 class="logo" id="brand-font">FitLife</h2>
+                    <p class="section-description">We believe fitness should be accessible to everyone,<br>everywhere, regardless of income or access to a gym. With<br>hundreds of professional workouts</p>
+                </div>
+                <div class="get-started flex">
+                    <h2 class="section-title">Get Started</h2>
+                    <p class="section-description">Service</p>
+                    <p class="section-description">Contact Us</p>
+                    <p class="section-description">Affiliate Program</p>
+                    <p class="section-description">About Us</p>
+                </div>
+                <div class="get-started flex">
+                    <h2 class="section-title">Get Started</h2>
+                    <p class="section-description">FitLife</p>
+                    <p class="section-description">Platform</p>
+                    <p class="section-description">Workout Library</p>
+                    <p class="section-description">App Design</p>
+                </div>
             </div>
-            <div class="get-started flex">
-                <h2 class="section-title">Get Started</h2>
-                <p class="section-description">Service</p>
-                <p class="section-description">Contact Us</p>
-                <p class="section-description">Affiliate Program</p>
-                <p class="section-description">About Us</p>
+
+            <div class="disclaimer">
+                <hr style="opacity: 20%;">
+                <p class="center section-description" id="mb-zero">All right reserved &copy; FitLife 2024</p>
             </div>
-            <div class="get-started flex">
-                <h2 class="section-title">Get Started</h2>
-                <p class="section-description">FitLife</p>
-                <p class="section-description">Platform</p>
-                <p class="section-description">Workout Library</p>
-                <p class="section-description">App Design</p>
-            </div>
-        </div>
-        <div class="disclaimer section-area">
-            <hr style="opacity: 20%;">
-            <p class="center section-description" id="mb-zero">All right reserved &copy; FitLife 2024</p>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
