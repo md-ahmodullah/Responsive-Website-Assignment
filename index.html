@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header class="section-area">
+    <header class="section-area" id="header">
         <nav class="navbar flex">
             <div>
                 <h2 class="logo">FitLife</h2>
@@ -60,6 +60,13 @@
             </div>
         </section>
     </header>
+    <div class="scrollUp flex">
+        <div class="sticky">
+            <a href="#header">
+                <img src="images/icons/scroll_up.png" alt="" title="Go Above">
+            </a>
+        </div>
+    </div>
     <main>
         <!-- Change Your Habits section starts -->
         <section class="change-your-habits-container section-area">
@@ -379,23 +386,43 @@
 
           <!-- Unique section 2: Review and Ratings section -->
            <section class="section-area review-ratings-container flex">
-            <div>
-                <h2 class="section-title">Reviews & Ratings</h2>
+            <div class="center">
+                <h2 class="section-title">Customer Reviews</h2>
                 <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet consectetur adipisicing Mollitia accusantium saepe eveniet  <br> ratione error, quasi harum maiores cumque earum magni!</p>
-                <hr style="opacity: 30%; margin-top: 15px;">
             </div>
-            
+            <hr style="opacity: 30%; margin: 15px 0px;">
 
             <div class="review-ratings flex">
                 <div class="ratings-writeReview flex">
                     <h2 class="white review-ratings-title">Ratings</h2>
                     <div class="ratings flex">
-                        <div class="stars">
-                            <p class="white">*****</p>
-                            <p class="white">****</p>
-                            <p class="white">***</p>
-                            <p class="white">**</p>
-                            <p class="white">*</p>
+                        <div class="stars flex">
+                            <div class="star-5 flex star">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                            </div>
+                            <div class="star-4 flex star">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                            </div>
+                            <div class="star-3 flex star">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                            </div>
+                            <div class="star-2 flex star">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                            </div>
+                            <div class="star-1 flex star">
+                                <img src="images/icons/star.png" alt="">
+                            </div>
+                            
                         </div>
                         <div class="line flex">
                             <div class="line5"></div>
@@ -408,9 +435,12 @@
                     <div class="write-review">
                         <div>
                             <h3 class="white">Write Your Review</h3>
-                            <textarea cols="40" rows="10" placeholder="Great service! It's just..."></textarea>
-                            <input type="submit" value="Submit" class="card-btn">
-                            <input type="reset" value="Reset" class="card-btn">
+                            <textarea cols="38" rows="10" placeholder="Great service! It's just..."></textarea>
+                            <div>
+                                <input type="submit" value="Submit" class="card-btn">
+                                <input type="reset" value="Reset" class="card-btn">
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -424,8 +454,12 @@
                                 <h3 class="white">Jonathon Mark</h3>
                             </div>
                             <hr style="opacity: 30%;">
-                            <div class="stars flex">
-                                <p class="white">*****</p>
+                            <div class="star flex">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
                             </div>
                             <div class="review-text">
                                 <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
@@ -437,8 +471,12 @@
                                 <h3 class="white">Taylor Smith</h3>
                             </div>
                             <hr style="opacity: 30%;">
-                            <div class="stars flex">
-                                <p class="white">*****</p>
+                            <div class="star flex">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/half_star.png" alt="">
                             </div>
                             <div class="review-text">
                                 <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
@@ -450,8 +488,12 @@
                                 <h3 class="white">William Pitt</h3>
                             </div>
                             <hr style="opacity: 30%;">
-                            <div class="stars flex">
-                                <p class="white">*****</p>
+                            <div class="star flex">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
                             </div>
                             <div class="review-text">
                                 <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
@@ -463,8 +505,12 @@
                                 <h3 class="white">Lora Amber</h3>
                             </div>
                             <hr style="opacity: 30%;">
-                            <div class="stars flex">
-                                <p class="white">*****</p>
+                            <div class="star flex">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/half_star.png" alt="">
                             </div>
                             <div class="review-text">
                                 <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
@@ -476,8 +522,12 @@
                                 <h3 class="white">Luci Jones</h3>
                             </div>
                             <hr style="opacity: 30%;">
-                            <div class="stars flex">
-                                <p class="white">*****</p>
+                            <div class="star flex">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
                             </div>
                             <div class="review-text">
                                 <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
@@ -489,8 +539,12 @@
                                 <h3 class="white">Marry Naira</h3>
                             </div>
                             <hr style="opacity: 30%;">
-                            <div class="stars flex">
-                                <p class="white">*****</p>
+                            <div class="star flex">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/half_star.png" alt="">
                             </div>
                             <div class="review-text">
                                 <p class="section-description" id="mb-zero">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Sint unde totam nisi ad volup tates quisquam tempore amet autem quae facere!</p>
