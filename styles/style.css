@@ -23,11 +23,8 @@ body{
     margin: 0 auto;
     margin-bottom: 115px;
 }
-.heading{
+.mb-65{
     margin-bottom: 65px;
-}
-.bg-primary{
-    background: rgb(230, 83, 60);
 }
 .bg-secondary{
     background: rgb(34, 34, 34);
@@ -80,7 +77,7 @@ body{
     display: grid;
 }
 
-/* navbar styles */
+/* navbar style */
 .navbar{
     margin-top: 57px;
     justify-content: space-between;
@@ -101,7 +98,6 @@ body{
     background: rgb(230, 83, 60);
     padding: 7px 15px;
 }
-
 .hamburger-icon{
     display: none;
 }
@@ -112,7 +108,7 @@ body{
     margin-bottom: 4px;
 }
 
-/* banner styles */
+/* banner style */
 .banner{
     margin-top: 32px;
     justify-content: space-between;
@@ -296,7 +292,8 @@ body{
     padding-left: 6px;
     background-color: rgba(0, 0, 0, 0.4);
 }
-/* Unique section styles */
+
+/* Unique section 1: Our Achievements style */
 .achievements{
     flex-direction: column;
     gap: 40px;
@@ -310,11 +307,20 @@ body{
     align-items: center;
     border: 1px solid rgba(211, 211, 211, 0.274);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
+    gap: 15px;
+}
+.card-image{
+    width: 55%;
+}
+.card-content{
+    width: 45%;
 }
 .card img{
     width: 100%;
+    border-radius: 10px;
 }
+
 .card-title{
     color: rgb(255, 255, 255);
     font-size: 1.4rem;
@@ -331,11 +337,13 @@ body{
     font-size: 0.9rem;
     font-weight: 500;
 }
-.card img, .branch img{
-    height: 100px;
-    width: 150px;
+.branch {
+    flex-direction: column;
+    align-items: center;
 }
-
+.branch img{
+    width: 50%;
+}
 .pagination{
     justify-content: flex-end;
     align-items: center;
@@ -355,7 +363,7 @@ body{
 }
 .branches{
     grid-template-columns: repeat(4,1fr);
-    padding: 30px 0px;
+    padding: 20px 0px;
     border-radius: 10px;
 }
 .branch{
@@ -380,13 +388,12 @@ body{
     font-size: 1.6rem;
 }
 
-
 /* BMI calculator section style */
 .bmi-heading{
     flex-direction: column;
     align-items: center;
 }
-#mb-65{
+#mb-60{
     margin-bottom: 65px;
 }
 .bmi-chart{
@@ -585,7 +592,6 @@ textarea::placeholder{
     padding: 10px;
 }
 
-
 /* Footer section style */
 .footer-content{
     justify-content: space-between;
@@ -613,7 +619,7 @@ textarea::placeholder{
     padding: 35px 0px;
 }
 
-/* responsive style */
+/* Small devices responsive style */
 @media screen and (max-width: 576px) {
     .section-area{
         max-width: 350px;
@@ -724,6 +730,13 @@ textarea::placeholder{
     .trainer-image5,
     .trainer-image6{
         height: 280px;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+    .card-image, .card-content{
+        width: 100%;
     }
 
     .review-ratings{
