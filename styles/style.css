@@ -77,6 +77,19 @@ body{
     display: grid;
 }
 
+/* Up-arrow styles */
+.scrollUp img{
+    width: 80px;
+    height: 80px;
+}
+.scrollUp{
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 75px;
+    position: sticky;
+    top: 620px;
+}
+
 /* navbar style */
 .navbar{
     margin-top: 57px;
@@ -196,17 +209,7 @@ body{
     font-weight: 600;
     margin-bottom: 8px;
 }
-.scrollUp img{
-    width: 50px;
-    height: 50px;
-}
-.scrollUp{
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 75px;
-    position: sticky;
-    top: 620px;
-}
+
 
 /* run an extra mile section style */
 .run-mile-container{
