@@ -391,7 +391,7 @@ body{
     gap: 5px;
 }
 .enter-btn{
-    border: 3px solid rgba(230, 83, 60, 0.831);
+    border: 1px solid rgba(230, 83, 60, 0.831);
     border-radius: 10px;
     padding: 0px 20px;
     color: rgb(255, 255, 255);
@@ -719,16 +719,23 @@ textarea::placeholder{
     .card{
         gap: 20px;
     }
-    .branches{
+    .plans{
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+    .action-btn{
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
     }
     .find{
         padding: 25px 15px;
         gap: 15px;
     }
-    .find input{
-        width: 90%;
+    .enter-btn{
+        width: 30%;
+        border-radius: 50px;
+        padding: 10px 20px;
     }
 
     .bmi-heading{
