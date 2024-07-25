@@ -372,7 +372,8 @@ body{
     align-items: center;
 }
 .plan img{
-    width: 50%;
+    width: 150px;
+    height: 150px;
 }
 .find{
     background-image: url(../images/exercise2.png);
@@ -721,7 +722,6 @@ textarea::placeholder{
     }
     .plans{
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
     }
     .action-btn{
         flex-direction: column;
