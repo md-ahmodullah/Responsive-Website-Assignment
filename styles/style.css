@@ -331,7 +331,7 @@ body{
 
 .card-title{
     color: rgb(255, 255, 255);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -344,13 +344,6 @@ body{
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 500;
-}
-.branch {
-    flex-direction: column;
-    align-items: center;
-}
-.branch img{
-    width: 50%;
 }
 .pagination{
     justify-content: flex-end;
@@ -365,18 +358,21 @@ body{
 #on-page{
     color: rgba(255, 255, 255, 0.858);
 }
-.popular-branches{
+.action-plans{
     flex-direction: column;
     gap: 30px;
 }
-.branches{
+.plans{
     grid-template-columns: repeat(4,1fr);
     padding: 20px 0px;
     border-radius: 10px;
 }
-.branch{
+.plan{
     flex-direction: column;
     align-items: center;
+}
+.plan img{
+    width: 50%;
 }
 .find{
     background-image: url(../images/exercise2.png);
@@ -390,6 +386,19 @@ body{
     align-items: center;
     gap: 25px;
     border-radius: 10px;
+}
+.action-btn{
+    gap: 5px;
+}
+.enter-btn{
+    border: 3px solid rgba(230, 83, 60, 0.831);
+    border-radius: 10px;
+    padding: 0px 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(230, 83, 60);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 #bg-dark{
     background: rgba(2, 2, 2, 0.811);
