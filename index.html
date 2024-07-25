@@ -6,6 +6,7 @@
     <title>FitLife</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8de52bb029.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header-area" id="header">
@@ -41,7 +42,7 @@
         <section class="banner flex">
             <div class="content flex">
                 <h1 class="section-title" id="banner-title">Get body in <span id="shape">shape</span> & stay healthy</h1>
-                <p class="section-description">A huge selection of health and fitness content, healthy recipes <br>and transformation stories to help you get fit and stay fit!</p>
+                <p class="section-description">A huge selection of health and fitness content, healthy <br> recipes and transformation stories to help you get fit and stay fit!</p>
                 <div class="buttons flex">
                     <button class="btn">Join Club Now!</button>
                     <button class="btn" id="btn-bg-black">Download App</button>
@@ -116,7 +117,7 @@
             <div class="run-mile-content flex">
                 <div class="run-content flex">
                     <h2 class="section-title">Run an Extra <br> Mile Easily</h2>
-                    <p class="section-description">Challenge yourself to exceed your limits and discover <br> the rewards of perseverance and dedication in fitness. <br>Surpass your fitness goals by pushing beyond your comfort <br> zone and embracing the power of determination.</p>
+                    <p class="section-description">Challenge yourself to exceed your limits and <br> discover the rewards of perseverance and <br> dedication in fitness.Surpass your fitness goals <br> by pushing beyond your comfort zone and <br>embracing the power of determination.</p>
                     <div>
                         <button class="btn">Join Now</button>
                     </div> 
@@ -131,7 +132,7 @@
           <section class="section-area">
             <div class="mb-65">
                 <h2 class="section-title">Trainings and Exercises</h2>
-                <p class="section-description">Discover effective training techniques and dynamic workouts designed to enhance <br> your strength, endurance, and overall fitness journey.</p>
+                <p class="section-description">Discover effective training techniques and dynamic workouts designed to enhanceyour strength, <br>  endurance, and overall fitness journey.</p>
             </div>
             
             <!-- .training-images*6>.image#image$>img[src="exercise$.jpg" alt="Doing Exercise Images"] -->
@@ -232,7 +233,7 @@
                 <p class="section-description">Celebrate the inspiring success stories of our members as they conquer challenges, reach goals, and <br> transform their lives through fitness.</p>
             </div>
             <div class="cards grid">
-                <div class="card flex">
+                <div class="card flex justify">
                     <div class="card-image">
                         <img src="images/tranformation/transformation6.png" alt="">
                     </div>
@@ -301,6 +302,7 @@
                         </div>
                         <h4 class="card-title">Mission Moon</h4>
                         <p class="section-description center">40 Days of <br>Fat Burning Challenge</p>
+                        <button class="plan-btn"><i class="fa-solid fa-file-pdf"></i> Download Plan</button>
                     </div>
                     <div class="plan flex">
                         <div class="center">
@@ -308,6 +310,7 @@
                         </div>
                         <h4 class="card-title">Mission Mars</h4>
                         <p class="section-description center">100 Days of <br>Muscle Building Challenge</p>
+                        <button class="plan-btn"><i class="fa-solid fa-file-pdf"></i> Download Plan</button>
                     </div>
                     <div class="plan flex">
                         <div class="center">
@@ -315,6 +318,7 @@
                         </div>
                         <h4 class="card-title">Mission Jupyter</h4>
                         <p class="section-description center">150 Days of <br>6 Pack Abs Challenge</p>
+                        <button class="plan-btn"><i class="fa-solid fa-file-pdf"></i> Download Plan</button>
                     </div>
                     <div class="plan flex">
                         <div class="center">
@@ -322,6 +326,7 @@
                         </div>
                         <h4 class="card-title center">Mission Nebula</h4>
                         <p class="section-description center">180 Days of <br>Body Building Challenge</p>
+                        <button class="plan-btn"><i class="fa-solid fa-file-pdf"></i> Download Plan</button>
                     </div>
                 </div>
             </div>
@@ -459,54 +464,97 @@
                 
                 <div>
                     <h2 class="review-ratings-title">Reviews</h2>
-                    <div class="reviews grid">
-                        <div class="review-card flex small-off">
-                            <div class="name-pic flex">
-                                <div><img src="images/icons/girl.png" alt=""></div>
-                                <h3 class="white">Olivia Davis</h3>
-                            </div>
-                            <hr style="opacity: 30%;">
+                        
+                    <div class="star-time flex" id="start-rating">
+                            <h5 class="white">4.8</h5>
                             <div class="star flex">
                                 <img src="images/icons/star.png" alt="">
                                 <img src="images/icons/star.png" alt="">
                                 <img src="images/icons/star.png" alt="">
                                 <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
+                                <img src="images/icons/half_star.png" alt="">
                             </div>
-                            <div class="review-text">
+                            <div class="time">
+                                <p class=" section-description" id="mb-zero"><small>(5647 reviews)</small></p>
+                            </div>
+                        
+                    </div>
+                    <div class="reviews grid">
+                        <div class="review-card flex small-off">
+                            <div class="name-pic flex">
+                                <div><img src="images/icons/girl.png" alt=""></div>
+                                <div class="name-star flex">
+                                    <h5 class="white">Olivia Davis</h5>
+                                    <div class="star-time flex">
+                                        <div class="star flex">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                        </div>
+                                        <div class="time">
+                                            <p class=" section-description" id="mb-zero"><small>5 months ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <hr style="opacity: 30%; margin: 5px 0px;">
+                            <div class="review-text justify">
                                 <p class="section-description" id="mb-zero">This gym has completely changed my life! The supportive environment and expert trainers helped me achieve my fitness goals faster than I ever imagined.</p>
                             </div>
                         </div>
                         <div class="review-card flex small-off">
                             <div class="name-pic flex">
                                 <div><img src="images/icons/boy.png" alt=""></div>
-                                <h3 class="white">Liam Johnson</h3>
+                                <div class="name-star">
+                                    <h5 class="white">Liam Johnson</h5>
+                                    <div class="star-time flex">
+                                        <div class="star flex">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/half_star.png" alt="">
+                                        </div>
+                                        <div class="time">
+                                            <p class=" section-description" id="mb-zero"><small>1 year ago</small></p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
                             </div>
-                            <hr style="opacity: 30%;">
-                            <div class="star flex">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/half_star.png" alt="">
-                            </div>
+                            <hr style="opacity: 30%; margin: 5px 0px;">
+                            
                             <div class="review-text">
-                                <p class="section-description" id="mb-zero">I love the variety of classes offered! Each session is engaging and challenging, making workouts enjoyable while pushing me to my limits.</p>
+                                <p class="section-description" id="mb-zero">Joining this gym was the best decision! I've lost weight, gained strength, and feel more confident than ever. Highly recommend to anyone looking to improve!</p>
                             </div>
                         </div>
                         <div class="review-card flex">
                             <div class="name-pic flex">
                                 <div><img src="images/icons/boy.png" alt=""></div>
-                                <h3 class="white">Noah Smith</h3>
+                                <div class="name-star flex">
+                                    <h5 class="white">Noah Smith</h5>
+                                    <div class="star-time flex">
+                                        <div class="star flex">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/half_star.png" alt="">
+                                        </div>
+                                        <div class="time">
+                                            <p class=" section-description" id="mb-zero"><small>15 days ago</small></p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
                             </div>
-                            <hr style="opacity: 30%;">
-                            <div class="star flex">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/half_star.png" alt="">
-                            </div>
+                            <hr style="opacity: 30%; margin: 5px 0px;">
+                            
                             <div class="review-text">
                                 <p class="section-description" id="mb-zero">The community here is incredible! I've made lasting friendships and found the motivation I needed to stay committed to my fitness journey.</p>
                             </div>
@@ -514,16 +562,25 @@
                         <div class="review-card flex">
                             <div class="name-pic flex">
                                 <div><img src="images/icons/girl.png" alt=""></div>
-                                <h3 class="white">Emma Wilson</h3>
+                                <div class="name-star flex">
+                                    <h5 class="white">Emma Wilson</h5>
+                                    <div class="star-time flex">
+                                        <div class="star flex">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                        </div>
+                                        <div class="time">
+                                            <p class=" section-description" id="mb-zero"><small>3 months ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <hr style="opacity: 30%;">
-                            <div class="star flex">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                            </div>
+                            <hr style="opacity: 30%; margin: 5px 0px;">
+                            
                             <div class="review-text">
                                 <p class="section-description" id="mb-zero">The trainers are knowledgeable and genuinely care about my progress. Their personalized approach has made all the difference in my transformation.</p>
                             </div>
@@ -531,16 +588,25 @@
                         <div class="review-card flex">
                             <div class="name-pic flex">
                                 <div><img src="images/icons/boy.png" alt=""></div>
-                                <h3 class="white">Ethan Brown</h3>
+                                <div class="name-star flex">
+                                    <h5 class="white">Ethan Brown</h5>
+                                    <div class="star-time flex">
+                                        <div class="star flex">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                        </div>
+                                        <div class="time">
+                                            <p class=" section-description" id="mb-zero"><small>5 months ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
                             </div>
-                            <hr style="opacity: 30%;">
-                            <div class="star flex">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                            </div>
+                            <hr style="opacity: 30%; margin: 5px 0px;">
+                            
                             <div class="review-text">
                                 <p class="section-description" id="mb-zero">I appreciate the clean facilities and welcoming atmosphere. It's a great place to work out, no matter your fitness level or experience.</p>
                             </div>
@@ -548,18 +614,27 @@
                         <div class="review-card flex">
                             <div class="name-pic flex">
                                 <div><img src="images/icons/girl.png" alt=""></div>
-                                <h3 class="white">Ava Martinez</h3>
+                                <div class="name-star flex">
+                                    <h5 class="white">Ava Martinez</h5>
+                                    <div class="star-time flex">
+                                        <div class="star flex">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/star.png" alt="">
+                                            <img src="images/icons/half_star.png" alt="">
+                                        </div>
+                                        <div class="time">
+                                            <p class=" section-description" id="mb-zero"><small>1 year ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <hr style="opacity: 30%;">
-                            <div class="star flex">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/star.png" alt="">
-                                <img src="images/icons/half_star.png" alt="">
-                            </div>
+                            <hr style="opacity: 30%; margin: 5px 0px;">
+                            
                             <div class="review-text">
-                                <p class="section-description" id="mb-zero">Joining this gym was the best decision! I've lost weight, gained strength, and feel more confident than ever. Highly recommend to anyone looking to improve!</p>
+                                <p class="section-description" id="mb-zero">I love the variety of classes offered! Each session is engaging and challenging, making workouts enjoyable while pushing me to my limits.</p>
                             </div>
                         </div>
                     </div>
