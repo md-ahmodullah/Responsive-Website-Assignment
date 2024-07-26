@@ -537,6 +537,9 @@ option{
     justify-content: space-between;
     gap: 20px;
 }
+.ratings-writeReview{
+    flex-direction: column;
+}
 .reviews{
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
@@ -557,16 +560,17 @@ option{
     height: 30px;
 }
 .ratings{
-    align-items: center;
-    gap: 20px;
-    width: 35%;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 35%; */
 }
+
 .stars{
     flex-direction: column;
 }
-.star img{
-    width: 20px;
-    height: 20px;
+.number-star{
+    align-items: center;
+    gap: 5px;
 }
 .name-star{
     flex-direction: column;
@@ -574,40 +578,61 @@ option{
 .star-time{
     align-items: center;
     gap: 10px;
+    margin-top: 4px;
+}
+.star-icon{
+    font-size: 0.8rem;
+    /* color: rgb(255, 179, 2); */
+    color: rgba(255, 255, 255, 0.5);
+}
+.star-icon-gold{
+    font-size: 0.6rem;
+    color: rgb(255, 179, 2);
+}
+.line-area{
+    width: 200px;
+    height: 7px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.461);
 }
 .line{
-    flex-direction: column;
-    gap: 15px;
+    height: 7px;
+    border-radius: 10px;
+    background-color: rgb(255, 179, 2);
 }
-.line5{
+#line-5{
     width: 200px;
-    height: 8px;
+    height: 7px;
     border-radius: 10px;
-    background-color: rgba(255, 179, 2, 0.986);
+    background-color: rgb(255, 179, 2);
 }
-.line4{
+#line-4{
     width: 160px;
-    height: 8px;
+    height: 7px;
     border-radius: 10px;
-    background-color: rgba(255, 179, 2, 0.986);
+    background-color: rgb(255, 179, 2);
 }
-.line3{
+#line-3{
     width: 120px;
-    height: 8px;
+    height: 7px;
     border-radius: 10px;
-    background-color: rgba(255, 179, 2, 0.986);
+    background-color: rgb(255, 179, 2);
 }
-.line2{
+#line-2{
     width: 80px;
-    height: 8px;
+    height: 7px;
     border-radius: 10px;
-    background-color: rgba(255, 179, 2, 0.986);
+    background-color: rgb(255, 179, 2);
 }
-.line1{
+#line-1{
     width: 40px;
-    height: 8px;
+    height: 7px;
     border-radius: 10px;
-    background-color: rgba(255, 179, 2, 0.986);
+    background-color: rgb(255, 179, 2);
+}
+.number-line{
+    align-items: center;
+    gap: 15px;
 }
 .ratings-writeReview{
     flex-direction: column;
@@ -617,7 +642,7 @@ option{
     margin-top: 25px;
 }
 .review-ratings-title{
-    color: rgba(255, 255, 255, 0.626);
+    color: rgb(255, 255, 255);
     letter-spacing: 15px;
 }
 textarea{
