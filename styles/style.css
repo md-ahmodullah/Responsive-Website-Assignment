@@ -854,3 +854,160 @@ textarea::placeholder{
         top: 560px;
     }
 }
+/* Medium devices responsive style */
+@media screen and (min-width: 577px) and (max-width: 792px){
+    .section-area{
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .header-area{
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .banner{
+        max-width: 700px;
+        flex-direction: column;
+        margin-top: 32px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #banner-title{
+        font-size: 3rem;
+    }
+    #shape{
+        font-size: 4.2rem;
+    }
+    .btn{
+        font-size: 0.9rem;
+    }
+    .video350{
+        bottom: 260px;
+        left: -15px;
+        padding: 10px 15px;
+    }
+    .video500{
+        top: 40px;
+        right: -5px;
+        padding: 10px 15px;
+    }
+
+    .circle-posts{
+        justify-content: space-between;
+    }
+    .circle-post img {
+        width: 100%;
+    }
+
+    .run-mile-content{
+        gap: 50px;
+        padding: 20px;
+    }
+    .run-image img{
+        width: 100%;
+    }
+    .training-images-row1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .training-image{
+        height: 160px;
+        padding: 10px;
+    }
+    #image2, #image4{
+        grid-column: auto;
+    }
+    #image4{
+        width: 65%;
+    }
+    #image5{
+        width: 85%;
+    }
+
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card{
+        gap: 20px;
+    }
+    .plans{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .action-btn{
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+    .find{
+        padding: 25px 15px;
+        gap: 15px;
+    }
+    .enter-btn{
+        width: 30%;
+        border-radius: 50px;
+        padding: 10px 20px;
+    }
+
+    .bmi-heading{
+        margin: 0 auto;
+    }
+    .table-area{
+        gap: 30px
+    }
+    .input{
+        width: 100%;
+    }
+    .trainer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: auto;
+    }
+    .small-off{
+        display: none;
+    }
+    .trainer-image1,
+    .trainer-image2,
+    .trainer-image3,
+    .trainer-image4,
+    .trainer-image5,
+    .trainer-image6{
+        height: 280px;
+    }
+
+    .card-image, .card-content{
+        width: 100%;
+    }
+
+    .plans {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .reviews{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .star-time{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+    #start-rating{
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-content{
+        gap: 25px;
+    }
+    .disclaimer{
+        margin-top: 50px;
+    }
+
+    .scrollUp img{
+        width: 60px;
+        height: 60px;
+    }
+    .scrollUp{
+        margin-right: 10px;
+        top: 560px;
+    }
+}
