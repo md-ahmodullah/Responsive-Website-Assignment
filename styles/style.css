@@ -868,10 +868,12 @@ textarea::placeholder{
     }
     .banner{
         max-width: 700px;
-        flex-direction: column;
         margin-top: 32px;
         justify-content: space-between;
         align-items: center;
+    }
+    .content{
+        max-width: 360px;
     }
     #banner-title{
         font-size: 3rem;
@@ -895,9 +897,11 @@ textarea::placeholder{
 
     .circle-posts{
         justify-content: space-between;
+        width: 100%;
     }
     .circle-post img {
-        width: 100%;
+        width: 153px;
+        height: 153px;
     }
 
     .run-mile-content{
