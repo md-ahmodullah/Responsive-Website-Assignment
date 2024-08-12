@@ -101,12 +101,8 @@ body{
     top: 620px;
 }
 
-/* header{
-    background-color: rgba(255, 255, 255, 0.085);
-    background-blend-mode: overlay;
-} */
 header{
-    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.082), rgba(255, 255, 255, 0.14));
+    background-image: linear-gradient(to bottom, #00000033, #2e2e2e3a, #58585834, #8787874c, #b9b9b93c, #b9b9b93a, #b9b9b93a, #b9b9b93a, #87878741, #5858583f, #2e2e2e32, #0000003e);
 }
 
 /* navbar style */
@@ -713,7 +709,7 @@ textarea::placeholder{
     .section-area{
         max-width: 350px;
         margin: 0 auto;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
     .header-area{
         max-width: 350px;
@@ -740,7 +736,7 @@ textarea::placeholder{
         font-size: 3rem;
     }
     #shape{
-        font-size: 4.2rem;
+        font-size: 6rem;
         line-height: 0;
     }
     .btn{
@@ -902,7 +898,7 @@ textarea::placeholder{
         font-size: 3rem;
     }
     #shape{
-        font-size: 4.2rem;
+        font-size: 6rem;
         line-height: 0;
     }
     .btn{
